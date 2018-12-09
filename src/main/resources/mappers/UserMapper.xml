@@ -316,7 +316,6 @@
 
   <select id="selectLogin" parameterType="map" resultMap="BaseResultMap">
     SELECT
---     *???//这样真的好么?答案就是,这样不好.
     <include refid="Base_Column_List" />
     from mmall_user
     where username = #{username}
